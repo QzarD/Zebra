@@ -1,0 +1,64 @@
+
+@mixin font-open {
+    font-family: 'Open Sans', sans-serif;
+} 
+@mixin font-josefin {
+    font-family: 'Josefin Sans', sans-serif;
+} 
+
+
+.tours-section{
+    text-align: center;
+    max-width: 1144px;
+    margin: 0 auto;
+    &-inner{
+        margin-top: 100px;
+        margin-bottom: 23px;
+
+        &-wrapper{
+            h2{
+                font-size: 24px;
+                color: #0a0a0a;
+                line-height: 24px;
+                @include font-josefin;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+            }
+            &-img{
+                .img-divider{
+                    padding-top: 30px;
+                    padding-bottom: 60px;
+                    img{}
+                }
+            }
+            &-categories{
+                display: flex;
+                justify-content: center;
+
+                .categories-col{
+                    width: 33%;
+                    font-size: 18px;
+                    color: #0a0a0a;
+                    line-height: 18px;
+                    @include font-josefin;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    margin-bottom: 10px;
+                }
+            }
+            .categories-row{
+                display: flex;
+                &-col{
+                    margin: 10px;
+                    width: 33%;
+                    letter-spacing: 3px;
+                    @include font-josefin;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
